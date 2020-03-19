@@ -15,27 +15,38 @@
 	"Print to console": {
 		"prefix": "log",
 		"body": [
-			"console.log(`$1`);",
+			"console.log(`$1`);$2",
 		],
 		"description": "Log output to console"
 	},
 	"CSS to console": {
 		"prefix": "sog",
 		"body": [
-			"console.log(`%c$1`, `$2`);"
+			"console.log(`%c$1`, `$2`);$3"
 		]
 	},
 	"Table to console": {
 		"prefix": "tbl",
 		"body": [
-			"console.table($1);"
+			"console.table($1);$2"
+		]
+	},
+	"Error to console": {
+		"prefix": "cer",
+		"body": [
+			"console.error(`$1: ${$2}`);$3"
 		]
 	},
 	"New Queury Selector": {
 		"prefix": "dqs",
 		"body": [
-			"const $1 = document.querySelector('#$2');",
-			"$3"
+			"const $1 = document.querySelector('#$2');$3"
+		]
+	},
+	"require module": {
+		"prefix": "crm",
+		"body": [
+			"const $1 = require('$2');$3"
 		]
 	}
 }
