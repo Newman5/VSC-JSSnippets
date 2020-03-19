@@ -48,5 +48,17 @@
 		"body": [
 			"const $1 = require('$2');$3"
 		]
+	},
+	"Const new object": {
+		"prefix": "cno",
+		"body": [
+			"const $1 = new $2;$3"
+		]
+	},
+	"New object": {
+		"prefix": "no",
+		"body": [
+			"let $1 = new $2;$3"
+		]
 	}
 }
